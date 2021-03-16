@@ -1,0 +1,54 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage{times}
+\usepackage{durhampaper}
+\usepackage{harvard}
+
+\citationmode{abbr}
+\bibliographystyle{agsm}
+
+\title{Formatting Template for the 3rd Year Project Paper}
+\author{}
+\student{Maximilian Grimmett}
+\supervisor{Dr Eleni Akrida}
+\degree{MEng Computer Science}
+
+\date{}
+
+\begin{document}
+
+    \maketitle
+
+    \begin{abstract}
+        These instructions give you guidelines for preparing the final paper.  DO NOT change any settings, such as margins and font sizes.  Just use this as a template and modify the contents into your final paper.  Do not cite references in the abstract.
+
+        The abstract must be a Structured Abstract with the headings {\bf Context/Background}, {\bf Aims}, {\bf Method}, {\bf Results}, and {\bf Conclusions}.  This section should not be longer than half of a page, and having no more than one or two sentences under each heading is advised.
+    \end{abstract}
+
+    \begin{keywords}
+        Put a few keywords here.
+    \end{keywords}
+
+    \section{Introduction}\label{sec:introduction}
+    \input{sections/00-introduction}
+
+    \section{Related Work}\label{sec:related-work}
+    \input{sections/01-related-work}
+
+    \section{Solution}\label{sec:solution}
+    \input{sections/02-solution}
+
+    \section{Validity}\label{sec:validity}
+    \input{sections/03-validity}
+
+    \section{Results}\label{sec:results}
+    \input{sections/04-results.tex}
+
+    \section{Evaluation}\label{sec:evaluation}
+    \input{sections/05-evaluation.tex}
+
+    \section{Conclusion}\label{sec:conculsion}
+    \input{sections/06-conclusion.tex}
+
+    \bibliography{projectpaper}
+
+\end{document}
