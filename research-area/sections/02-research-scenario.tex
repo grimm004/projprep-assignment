@@ -1,0 +1,9 @@
+Temporal networks~\cite{kempe2002connectivity} are networks in which links appear and disappear over time.
+They are typically represented as graphs where each edge specifies a set of discrete times at which it is active.
+Alternatively, at any point in time, a \textit{snapshot} of the temporal network can be represented by a single static network (containing no time information).
+~\cite{kempe2002connectivity,akrida2015temporally,erlebach2021temporal} present the various algorithms, results and metrics used in traditional (static) network and graph theory when converted to be compatible with and applied to temporal networks.
+
+At minimum, research should be performed into how location service data can be modelled using temporal graphs, and how the results of algorithms applied to such models can be interpreted in a real-world context.
+This would require careful consideration of what the nodes and links are defined to represent, how the links activate and deactivate over time, and whether these representations are compatible with the aforementioned algorithms and metrics.
+
+Ideally, but subject to time constraints, this would be expanded upon to investigate how these algorithms could, in part, be used to track customers movements throughout their visit, either as a supplement to existing MAC de-randomisation techniques or independently in a novel fingerprinting scheme.

@@ -1,1 +1,30 @@
 % Maximum 1 page
+
+\subsection{Literature Review}\label{sec:lit-review-validity}
+
+Much of the research in the field of LBSs is performed by, or on behalf of, companies which have a vested interest in its success (or apparent success).
+This means that the cited papers not published in reputable journals such as tech reports need to undergo additional scrutiny to check for conflicts of interest where applicable.
+
+Additionally, given the privacy issues already discussed, it is important to check that cited papers give appropriate consideration to the way in which the methods they implement collect and process potentially identifying information and the actions they take to re-anonymise such data.
+
+To help improve validity, in Section~\ref{sec:related-work}, most journal articles and conference proceedings are only cited if they are published in a journal of impact factor greater than 4 (2 for newer journals) or a conference of historical impact factor greater than 2.
+Cited works with lower impact factors are either included for critique or if they are very recent.
+
+A downside to the validity of the literature review is that the majority of it is performed by a few key players, primarily Matte, C{\'e}lestin.
+While they appear to produce good work (and some of it is peer reviewed), its hard to validate because the majority is not published in credible journals.
+This should be partly put down to the fact that its a niche subject area that is still maturing.
+
+\subsection{Proposed Methodology}\label{sec:methodology-validity}
+
+It is important to consider the validity of the proposed methodology.
+To what degree of certainty does the Monte Carlo simulation of MAC randomisation represent real-world data and how is this calculated.
+
+Whether the testing framework is made before the hybrid system or vice versa, there is knowledge of one leading into the other, meaning there could be unconscious bias which looks to boost results when combining the two.
+
+Further to this, because the evaluation data is simulated, the additional generation and consideration of data for devices not using MAC randomisation provides an important baseline before comparison against the state of the art.
+
+To further increase the validity of the Monte Carlo simulation, where random values between 802.11 tolerances are generated, additional variance in the received value should be simulated to account for physical phenomena such as interference.
+
+One of the most important considerations for validity is how to be confident that the proposed framework is representative of real-world data.
+One measure put in place to help with this is the use of the previous techniques to calibrate the simulation.
+As a natural extension to this, the modular ability to swap between 802.11 Monte Carlo simulations provide an abstraction which helps verify the validity of any technique being evaluated using the framework.

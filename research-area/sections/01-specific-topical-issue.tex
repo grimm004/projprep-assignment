@@ -1,0 +1,16 @@
+\subsection{MAC Randomisation}\label{sec:mac-randomsiation}
+MAC randomisation is a technique employed by phone operating systems to dynamically change the MAC address broadcast by a device either over time or between responding to mobile pings.
+Since a MAC address is the only trivial means of uniquely identifying an unconnected device, randomly changing it prevents them from being tracked across a series of nodes.
+It has seen increased use over the past few years as Android, Apple and Windows devices have started shipping with and using it by default~\cite{vanhoef2016mac,matte2018spread}.
+
+While~\cite{hong2018crowdprobe} tries to overcome this using historical probabilistic transition data to predict movement, most other modern techniques, such as those described in~\cite{vanhoef2016mac,martin2017study}, try to overcome this by exploiting other information sent by a device (that is derived from the global MAC address).
+This is achieved by analysing the additional information sent in both 802.11 probe requests and the WPS fields containing connection security information.
+~\cite{matte2016defeating} shows that this information can be used in conjunction with timings of incoming frames (with randomised MAC addresses) to group the frames by the device they were most likely sent from. 
+
+\subsection{Ethical Considerations}\label{sec:ethical-considerations}
+An area of concern relating to LBSs is that of privacy~\cite{freudiger2015talkative,shen2020wi}.
+The reason MAC randomisation is used in the first place is to prevent actors from being able to piece together a map of a users movement over time.
+While MAC addresses are designed to uniquely identify devices, there is no way to inherently link them to any given person.
+Additionally, there is no need to collect any personal data traffic being sent over a network as only the control packets sent between devices are required.
+The scope of the location data should also be confined to individual premises, otherwise additional measures (such as those presented in~\cite{gruteser2003anonymous}) should be taken to reduce the resolution of the data.
+Nevertheless, approval and oversight by an ethical committee would be an important way to ensure any potentially identifying information is ignored and/or removed as early as possible.

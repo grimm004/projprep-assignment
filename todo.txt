@@ -1,0 +1,8 @@
+graph topology
+pattern of movements between hubs
+random pattern
+clique
+edge markovian - https://www.researchgate.net/publication/220533451_Flooding_Time_of_Edge-Markovian_Evolving_Graphs
+https://drops.dagstuhl.de/opus/volltexte/2019/10707/
+exploration - Thomas Erlebach, Michael Hoffmann, and Frank Kammer. \On temporal graph exploration". In: Journal of Computer and System Sciences 119 (2021), pp. 1{18.
+https://arxiv.org/pdf/2006.02368.pdf

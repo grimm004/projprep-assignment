@@ -47,11 +47,6 @@
     \if\@student\relax\else\normalsize{Student Name: }\@student\par\fi
     \vskip 3pt
     \if\@supervisor\relax\else\normalsize{Supervisor Name: }\@supervisor\par\fi
-    \vskip 5pt
-    \if\@degree\relax\else\small{Submitted as part of the degree of }\@degree { to the} \par
-    \vskip 5pt
-    {Board of Examiners in the Department of Computer Sciences, Durham University} \par\fi
-    \normalsize\@date\par
   \end{center}
   \endgroup
 }
@@ -89,16 +84,14 @@
 % define the chosen form of section headings
 
 \def\section{\@startsection {section}{1}{\z@}
-{14pt plus 2pt minus 2pt}{14pt plus 2pt minus 2pt}{\centering\bf\uppercase}}
+{-14pt plus 2pt minus 2pt}{14pt plus 2pt minus 2pt}{\centering\bf\uppercase}}
 
 \def\thesection{\Roman{section}}
 
 \def\subsection{\@startsection {subsection}{1}{\z@}
-{13pt plus 2pt minus 2pt}{13pt plus 2pt minus 2pt}{\bf\em}}
+{-13pt plus 2pt minus 2pt}{13pt plus 2pt minus 2pt}{\bf\em}}
 
 \def\thesubsection{\Alph{subsection}}
 
-
-
-
-
+\def\subsubsection{\@startsection {subsubsection}{1}{\z@}
+{-13pt plus 2pt minus 2pt}{13pt plus 2pt minus 2pt}{\bf\em}}

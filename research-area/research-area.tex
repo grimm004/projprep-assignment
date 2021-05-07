@@ -1,0 +1,36 @@
+\documentclass[a4paper]{article}
+
+\usepackage{biblatex}
+\usepackage[margin=2cm]{geometry}
+\usepackage{multicol}
+\usepackage{titling}
+
+\setlength{\droptitle}{-5em}
+
+\bibstyle{ieeetr}
+\addbibresource{references.bib}
+
+\title{Modelling Location-based Services with Temporal Networks to overcome MAC Randomisation}
+\author{Max Grimmett}
+\date{21/03/2021}
+
+\begin{document}
+
+    \maketitle
+
+    \begin{multicols*}{2}
+
+    \section{Introduction}\label{sec:introduction}
+    \input{sections/00-introduction}
+
+    \section{Specific Topical Issue}\label{sec:specific-topical-issue}
+    \input{sections/01-specific-topical-issue}
+
+    \section{Research Scenario}\label{sec:research-scenario}
+    \input{sections/02-research-scenario}
+
+    \printbibliography
+
+    \end{multicols*}
+
+\end{document}

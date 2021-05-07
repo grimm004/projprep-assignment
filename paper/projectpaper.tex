@@ -2,15 +2,31 @@
 \usepackage{times}
 \usepackage{durhampaper}
 \usepackage{harvard}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{flafter}
+\usepackage{nameref}
+\usepackage[htt]{hyphenat}
 
 \citationmode{abbr}
 \bibliographystyle{agsm}
 
-\title{Formatting Template for the 3rd Year Project Paper}
+\let\OLDthebibliography\thebibliography
+\renewcommand\thebibliography[1]{
+  \OLDthebibliography{#1}
+  \setlength{\parskip}{0pt}
+  \setlength{\itemsep}{0pt plus 0.3ex}
+}
+
+\title{Defeating MAC address randomisation: A hybrid, multi-layer approach for indoor location-based services}
 \author{}
 \student{Maximilian Grimmett}
 \supervisor{Dr Eleni Akrida}
 \degree{MEng Computer Science}
+
+\newcommand{\absdiv}[1]{%
+  \par\textbf{#1}\quad\ignorespaces \\
+}
 
 \date{}
 
@@ -19,26 +35,41 @@
     \maketitle
 
     \begin{abstract}
-        These instructions give you guidelines for preparing the final paper.  DO NOT change any settings, such as margins and font sizes.  Just use this as a template and modify the contents into your final paper.  Do not cite references in the abstract.
+        \absdiv{Context/Background}
+        Recently, location-based indoor positioning services using 802.11 (Wi-Fi) have seen a rise in popularity of MAC randomisation to prevent tracking of individual devices throughout their stay.
 
-        The abstract must be a Structured Abstract with the headings {\bf Context/Background}, {\bf Aims}, {\bf Method}, {\bf Results}, and {\bf Conclusions}.  This section should not be longer than half of a page, and having no more than one or two sentences under each heading is advised.
+        \absdiv{Aims}
+        Primarily, this paper looks to implement a system that combines previous techniques for MAC \\ de-randomisation at different layers of the OSI model and conduct comparative research evaluating it relative to their individual use.
+        Secondly, this paper looks to generalise these techniques to consider and evaluate groups of devices moving between different 802.11 nodes of the same network.
+        Additionally, to enable such comparisons, this paper aims to produce a novel, modular testing and evaluation framework which uses Monte Carlo simulation to generate realistic, real-time data.
+        
+        \absdiv{Method}
+        Due to the ethical implications of collecting potentially identifiable real-world data and the impracticality of doing so in a controlled environment, a real-world study is not suitable.
+        While applicable real-world datasets do exist, they do not encompass all the fields required at the different levels of abstraction used by the proposed hybrid system.
+        Instead, this paper proposes the use of Monte Carlo simulation of devices with and without MAC randomisation.
+
     \end{abstract}
 
     \begin{keywords}
-        Put a few keywords here.
+        Location-based services, MAC randomisation, dynamic networks, privacy-preservation.
     \end{keywords}
+    % \pagebreak
 
     \section{Introduction}\label{sec:introduction}
     \input{sections/00-introduction}
+    % \pagebreak
 
     \section{Related Work}\label{sec:related-work}
     \input{sections/01-related-work}
+    % \pagebreak
 
     \section{Solution}\label{sec:solution}
     \input{sections/02-solution}
+    % \pagebreak
 
     \section{Validity}\label{sec:validity}
     \input{sections/03-validity}
+    % \pagebreak
 
     \section{Results}\label{sec:results}
     \input{sections/04-results.tex}
@@ -49,6 +80,9 @@
     \section{Conclusion}\label{sec:conculsion}
     \input{sections/06-conclusion.tex}
 
-    \bibliography{projectpaper}
+    % \nocite{*}
+
+    {\footnotesize
+    \bibliography{projectpaper}}
 
 \end{document}

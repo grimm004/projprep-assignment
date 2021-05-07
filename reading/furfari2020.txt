@@ -1,0 +1,27 @@
+Discovering location based services: A unified approach for heterogeneous indoor localization systems
+Furfari, Crivello, et al. 2021
+https://www.sciencedirect.com/science/article/pii/S2542660520301657
+
+Terms:
+LBS - Location-Based Service
+ILS - Indoor Localisation System
+RFID - Radio Frequency Identification
+IoT - Internet of Things
+IPS - Indoor Positioning System
+
+Notes:
+
+
+References:
+Evolution of Indoor Positioning Technologies: A Survey
+Brena, Garcia-Vazquez, et al. 2017
+https://www.hindawi.com/journals/js/2017/2630413/
+
+Indoor Positioning at Arlanda Airport
+Al Rifai. 2009
+https://www.diva-portal.org/smash/get/diva2:458884/FULLTEXT01.pdf
+
+A Multimodal Fingerprint-Based Indoor Positioning System for Airports
+Molina, Olivares, et al. 2017
+https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=8270589
+

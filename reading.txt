@@ -1,0 +1,25 @@
+Be clear about the purpose
+Scaffolding Reading:
+- Abstract
+- Conclusions [Take notes - key results, critical thinking, opinions on evidence]
+
+- Introduction [5-7 references, Context, define terms, scope, signposting]
+- Related Work
+- LR: Current state of the art of people investigating the problem
+
+Write a list of questions.
+
+Gaps in the research
+
+Colour Coding:
+- Broad description
+- Theories
+- Link big ideas
+
+Why is it significant?
+Is this convincing?
+
+Why > How
+
+Monte Carlo Simulation
+Exploratory Space
